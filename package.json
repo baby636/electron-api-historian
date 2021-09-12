@@ -13,7 +13,7 @@
     "mocha": "^4.0.1",
     "semantic-release": "^15.13.15",
     "semver": "^5.4.1",
-    "standard": "^10.0.3"
+    "standard": "^11.0.0"
   },
   "scripts": {
     "update": "./script/update.sh",
