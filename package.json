@@ -19,11 +19,17 @@
     "update": "./script/update.sh",
     "build": "node script/build.js",
     "test": "mocha && standard --fix",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "standard": {
     "ignore": [
       "electron/"
     ]
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
